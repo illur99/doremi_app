@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+    background-image: url("piano.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.heading{
+    font-family: Poppins;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px rgb(255,255,255);
+    font-family: 1.5rem;
+    color: purple;
+}
+.keys{
+
+    display: flex;
+    height:400px;
+    width:50%;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.5);
+    border-top: 1px solid white;
+}
+button{
+    padding:15px;
+    font-size: 1.2rem;
+    margin:2px ;
+    height: 150px;
+    cursor: pointer;   
+}
+button:nth-of-type(even)
+{
+    background: black;
+    color: white;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    transform: scale(1);
+    box-shadow: 0px 0px 10    px white;
+}
